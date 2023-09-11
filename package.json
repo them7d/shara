@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "tailwindcss": "npx tailwindcss -i ./tailwind/index.css -o ./assets/index.css --watch"
+    "tailwindcss": "npx tailwindcss -i ./tailwind/index.css -o ./assets/css/index.css --watch"
   },
   "author": "",
   "license": "ISC",

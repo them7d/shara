@@ -1,0 +1,45 @@
+.woocommerce div.product form.cart div.quantity{
+      @apply flex;
+}
+.woocommerce div.product form.cart div.quantity .container-minus-plus>:is(.plus-btn, .minus-btn){
+      @apply px-2.5 cursor-pointer text-white text-center font-black;
+}
+.woocommerce div.product form.cart div.quantity .container-minus-plus .plus-btn{
+      @apply bg-lime-600;
+}
+.woocommerce div.product form.cart div.quantity .container-minus-plus .plus-btn:focus{
+      @apply outline-lime-500 outline-4 outline;
+}
+.woocommerce div.product form.cart div.quantity .container-minus-plus .minus-btn{
+      @apply bg-red-600 ;
+}
+.woocommerce div.product form.cart div.quantity .container-minus-plus .minus-btn:focus{
+      @apply outline-red-500 outline-2 outline;
+}
+
+/* cart style */
+.woocommerce td.product-quantity{
+      max-width: 100px;
+}
+.woocommerce td.product-quantity .quantity{
+      width: 100%;
+      margin: 0;
+      position: relative;
+      border: 1px solid lightgray;
+}
+.woocommerce .quantity .qty{
+      width: inherit;
+      max-width: 100%;
+      border: none;
+}
+.woocommerce td.product-quantity .quantity .container-minus-plus{
+
+      @apply flex text-white absolute top-0 bottom-0 right-0 left-0;
+
+}
+.woocommerce td.product-quantity .quantity .container-minus-plus .plus-btn{
+      @apply bg-lime-600 order-2 absolute right-0 px-3 cursor-pointer;
+}
+.woocommerce td.product-quantity .quantity .container-minus-plus .minus-btn{
+      @apply bg-red-600 order-1 absolute left-0 px-3 cursor-pointer;
+}

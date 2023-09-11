@@ -1,0 +1,39 @@
+.woocommerce ul.products, .woocommerce-page ul.products{
+      @apply flex flex-wrap justify-center max-w-[1064px] m-auto pt-3;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+      @apply flex flex-col;
+
+}
+ul > li.product > a.woocommerce-LoopProduct-link.woocommerce-loop-product__link > h2{
+      @apply text-center
+}
+ul > li.product > a.woocommerce-LoopProduct-link.woocommerce-loop-product__link > .price{
+      @apply flex justify-center;
+}
+ul > li.product > :is(.add_to_cart_button,.ajax_add_to_cart, .product_type_external, .product_type_grouped){
+      @apply text-center bg-[#333] text-white;
+}
+.woocommerce span.onsale{
+      @apply z-[5] bg-[#ae423f] flex items-center justify-center min-w-[unset] min-h-[unset] w-10 h-[--height-onsale] rounded-lg top-4 left-4;
+      --height-onsale: 30px;
+      line-height: var(--height-onsale);
+      font-size: 14px;
+}
+body ul.products li.product > a.woocommerce-LoopProduct-link.woocommerce-loop-product__link > span.onsale{
+      @apply top-4 right-4;
+}
+.woocommerce ul.products li.product .price del{
+      font-size: 12px;
+}
+.woocommerce ul.products li.product .price ins{
+      margin: 0 4px;
+}
+.woocommerce ul.products li.product .price .woocommerce-Price-amount{
+      margin: 0 5px;
+}
+@media (width< 768px){
+      .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product{
+            @apply p-4;
+      }
+}

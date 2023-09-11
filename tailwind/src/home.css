@@ -1,0 +1,9 @@
+body .site-main{
+  position:relative;
+  top:78px;
+  margin:auto;
+  max-width:1064px;
+  padding-left:0.75rem;
+  padding-right:0.75rem;
+  padding-top:1.25rem;
+}

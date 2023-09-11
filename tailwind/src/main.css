@@ -1,0 +1,26 @@
+html, body{
+      @apply font-sans;
+}
+body{
+      @apply my-0 mx-auto max-w-[1600px];
+}
+ul, ol {
+      @apply list-none p-0;
+}
+a{
+      text-decoration: none;
+      color: inherit;
+}
+*{
+      box-sizing: border-box;
+}
+ins{
+      text-decoration: none;
+}
+
+
+/* customizer */
+.customize-partial-edit-shortcut button, .widget .customize-partial-edit-shortcut button{
+    left: -10px;
+    top: -6px;
+}
