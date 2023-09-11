@@ -1,0 +1,91 @@
+header{
+    @apply flex bg-blue-200 absolute right-0 left-0 pr-2 z-10;
+    width: 100%;
+}
+header > * {
+    @apply p-1
+}
+header > ul.mini-cart {
+    @apply list-none p-0 relative self-center px-3;
+}
+header > ul.mini-cart .badge{
+    @apply absolute top-[-5px] right-[5px] bg-white font-bold rounded-full px-1.5;
+}
+header > ul > li:nth-child(2){
+    max-width: 300px;
+    width: 100%;
+    @apply hidden absolute z-10 bg-sky-400 p-72 p-10 p-3;
+}
+header > ul.mini-cart:hover li:nth-child(2){
+    @apply block;
+}
+.scroll-active body header{
+    @apply max-h-[86px] fixed;
+    transition: transform .5s ease;
+}
+.scroll-active body.admin-bar header{
+    @apply top-[32px];
+}
+.scroll-active.scroll-down body header{
+    transform: translateY(-86px);
+}
+.scroll-active.scroll-down body.admin-bar header{
+    transform: translateY(-118px);
+
+}
+ul.menu{
+    @apply flex ;
+}
+ul.menu > li {
+    @apply m-2 ;
+}
+ul.menu a{
+    text-decoration: none;
+    color: #333;
+}
+.menu-header-container{
+    flex-grow: 1;
+}
+.custom-logo-link{
+    padding: 10px;
+}
+
+.icon-cart{
+    @apply text-[#952323]
+}
+@media (width <= 768px){
+    header{
+        max-width: 1064px;
+    }
+}
+body>.woocommerce{
+    @apply relative top-[78px] pt-5 px-3 max-w-[1064px] m-auto;
+}
+body header .widget_product_search{
+    @apply flex items-center;
+}
+body header .widget_product_search form {
+    @apply flex;
+}
+body header .widget_product_search input.search-field{
+    @apply h-8 w-72 text-[16px] border border-r-0 bg-white;
+    border-radius: 5px 0 0 5px;
+    text-indent: 5px;
+    border-color: gray;
+    border-style: hidden;
+}
+body header .widget_product_search input.search-field:focus-visible{
+    outline: 0;
+    border: 2px solid gray;
+}
+body header .widget_product_search button{
+    @apply h-8 cursor-pointer;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid black;
+    background: white;
+    border-style: hidden;
+    border-left-style: groove;
+}
+body header .mini-cart .cart-item-container{
+    @apply w-max right-[10px];
+}
